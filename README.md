@@ -1,7 +1,7 @@
 # Inventory Management System (Summer Project)
 
-The Inventory Management System enables the user to add an inventory, delete an inventory, enter inventory quantity and other 
-details, update inventor.
+The Inventory Management System enables the user to add an inventory, delete an inventory, enter inventory quantity, update inventory and other 
+details.
 
 The project is being developed using a variety of tools. The following are the tools that 
 were chosen:
