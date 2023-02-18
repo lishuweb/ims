@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather:ital@0;1&family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Rubik:ital,wght@1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container 
+{
+    width: 100%;
+    display: block;
+}
+.container .side-bar 
+{
+    display: block;
+    width: 20%;
+    height: 100vh;
+    /*border: 1px solid #D0ECE7;*/
+    float: left;
+}
+.side-bar .top 
+{
+    width: 50%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.side-bar .top img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.side-bar ul  
+{
+    margin-top: 60px;
+    text-align: justify;
+    margin-left: 30%;
+}
+.sidenav a, .dropdown-btn 
+{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  margin-top: 5%;
+}
+.dropdown-btn  i 
+{
+    margin-right: 40px;
+}
+.sidenav a:hover 
+{
+  color: #117A65;
+  transition: .3s;
+  font-size: 21px;
+}
+.dropdown-btn:hover,
+.dropdown-container a i:hover 
+{
+    color: #117A65;
+    transition: .3s;
+    font-size: 19px;
+}
+.main 
+{
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.active 
+{
+  background-color: #16A085;
+  color: white;
+}
+.dropdown-container 
+{
+  display: none;
+  /*background-color: #262626;*/
+  padding-left: 8px;
+  color: #000;
+  font-size: 18px;
+}
+.dropdown-container a 
+{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.dropdown-container a i 
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.fa-caret-down 
+{
+  margin-left: 20px;
+}
+@media screen and (max-height: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container .nav 
+{
+    height: 50px;
+    width: 80%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*box-shadow: 0px 1px #D0ECE7;*/
+}
+
+.nav i 
+{
+    font-size: 24px;
+    line-height: 50px;
+    color: #138D75;
+    float: right;
+    margin-right: 5%;
+}
+

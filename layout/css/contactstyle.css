@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather:ital@0;1&family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Rubik:ital,wght@1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 
+{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 40px;
+    color: #DC7633;
+}
+h3
+{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #E59866;
+
+            }
+            h2
+            {
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+            }
+ 			.box 
+ 			{
+ 				display: flex;
+ 				width: 90%;
+ 				height: 300px;
+ 				margin-top: 3%;
+ 				margin-left: auto;
+ 				margin-right: auto;
+ 				background-color: white;
+ 				border-radius: 10px;
+                justify-content: center;
+                align-items: center;
+ 			}
+            .box .box1,
+            .box .box2
+
+            {
+                display: inline-block;
+                flex-basis: 30%;
+                width: 30%;
+                height: 300px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                /*box-shadow: 0 5px;*/
+                margin-right: 25px;
+            }
+      
+            .box .box3
+            {
+                display: inline-block;
+                width: 30%;
+                height: 300px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                /*box-shadow: 0 5px #DC7633;*/
+            }
+
+ 		    .box .box1 p,
+            .box .box2 p,
+            .box .box3 p
+            {
+                display: inline-block;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                color: black;
+                margin-top: 50px;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #DC7633;
+                padding-bottom: 10px;
+
+            }
+            .box .box1,
+            .box .box2, 
+            .box .box3, h6
+            {
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                line-height: 1.8;
+            }
+            .msg
+            {
+                /*border: 1px solid black;*/
+                height: 850px;
+                width: 100%;
+                margin-top: 3%;
+            }
+          
+            .msg p
+            {
+               font-family: 'Poppins', sans-serif;
+               text-align: center; 
+               margin-top: 10px;
+               font-size: 35px;
+               color: black;
+            }
+            .msg .msg1
+            {
+                margin-top: 60px;
+                height: 700px;
+                width: 40%;
+                border-radius: 3px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: #F6DDCC;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .msg .msg1 form 
+            {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: inline-block;
+                margin-top: 2%;
+            }
+            .msg .msg1 form input[type="text"],input[type="number"]
+            {
+                border:0;
+                background:none;
+                display: inline-block;
+                width: 80%;
+                height: 40px;
+                border: none;
+                /*background-color: #F8F9F9;*/
+                border-bottom: 2px solid #909497;
+                text-align: center;
+                transition: 0.25s;
+                margin-top: 30px;
+            }
+            .msg .msg1 form input[type="text"]:focus,input[type="number"]:focus
+            {
+                width: 86%;
+                /*border-bottom: 2px solid red;*/
+                outline: none;
+            }
+            .msg .msg1 form textarea
+            {
+                /*border:0;*/
+                background:none;
+                display: inline-block;
+                width: 80%;
+                /*height: 40px;*/
+                /*border: none;*/
+                /*background-color: #F8F9F9;*/
+                border: 2px solid #909497;
+                text-align: center;
+                transition: 0.25s;
+                margin-top: 30px;
+            }
+            .msg .msg1 form textarea:focus
+            {
+                outline: none;
+            }
+            .msg .msg1 form ::placeholder 
+            {
+                color: black;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+            }
+            .msg .msg1 form input[type="submit"]
+            {
+                border:0;
+                background:none;
+                display: block;
+                margin: 5% auto;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 18px 40px;
+                outline: none;
+                color: white;
+                border-radius: 3px;
+                transition: 0.25s;
+                cursor: pointer;
+                background-color: #C0392B;
+                font-family: 'Poppins', sans-serif;
+            }
+            .msg .msg1 form input[type="submit"]:hover
+            {
+                cursor: pointer;
+                background-color: #CD6155;
+                color: white;
+                transition: .3s;
+            }
+.footer 
+{
+  height: 300px;
+  width: 100%;
+  /*border: 1px solid black;*/
+  display: flex;
+  margin-top: 5%;
+}
+.footer .details1,
+.footer .details2,
+.footer .details3
+{
+  height: 300px;
+  width: 50%;
+  /*border: 1px solid black;*/
+}
+.footer .details1 .ig 
+{
+    height: 100px;
+    width: 180px;
+    /*border: 1px solid black;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 20px;*/
+}
+.footer .details1 .ig img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.footer .details1 .define 
+{
+    height: 200px;
+    width: 100%;
+    /*background-color: blue;*/
+    margin-top: 20px;
+}
+.footer .details1 .define p 
+{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer .details2 .txt1,
+.footer .details3 .txt2
+{
+    height: 80px;
+    width: 100%;
+    /*background-color: green;*/
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 10px;*/
+}
+.footer .details2 .txt1 p,
+.footer .details3 .txt2 p
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    /*margin-top: 40px;*/
+    margin-top: 20px;
+    position: relative; 
+}
+.footer .details2 .txt1 p:after,
+.footer .details3 .txt2 p:after
+{
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 5%;
+    background: #DC7633;;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.footer .details2 .define1
+{
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-top: 10px;
+}
+.footer .details2 .define1 a 
+{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.footer .details2 .define1 a:hover
+{ 
+    color: #DC7633;
+    transition: .3s;
+}
+.footer .details2 .define1 a:hover:after 
+{
+    /*color: #DC7633;
+    font-size: 18px;
+    transition: .3s;*/
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 30%;
+    background: #DC7633;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.footer .details3 .define2
+{
+    height: 100px;
+    width: 100%;
+    /*background-color: green;*/
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .details3 .define2 p 
+{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    /*margin-top: 20px;*/
+    line-height: 30px;
+}
+.footer .details3 .define2 p i 
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer .details3 .sm 
+{
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    /*background-color: red;*/
+}
+.footer .details3 .sm i 
+{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+.footer .details3 .sm a 
+{
+    color: black;
+}
+.footer .details3 .sm i:hover 
+{
+    font-size: 22px;
+    transition: .3s;
+    cursor: pointer;
+    color: #DC7633;
+}
+.right 
+{
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+.right p
+{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #000;
+}

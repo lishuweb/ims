@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather:ital@0;1&family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Rubik:ital,wght@1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav_bar  
+{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /*margin-top: 10px;*/
+    text-align: center;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+.nav_bar .logo  
+{
+    height: 100%;
+    width: 200px;
+    /*border: 1px solid black;*/
+}
+.nav_bar .logo img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav_bar .navlist
+{
+    display: flex;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 8%;
+}
+.nav_bar .navlist .navlistitem 
+{
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    line-height: 80px;
+    color: black;
+    margin: 18px;
+}
+.nav_bar a   
+{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.nav_bar .navlist .navlistitem:after
+{
+    content: "";
+    position: absolute;
+    background-color: #BC8F8F;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.nav_bar .navlist .navlistitem:hover:after
+{
+    width: 100%;
+}
+.nav_bar .but a 
+{
+    background-color: #BC8F8F;
+    color: #fff;
+    font-size: 18px;
+}
+.nav_bar .but a:hover 
+{
+    background-color: #CD6155;
+    transition: .3s;
+}
+.cup 
+{
+	height: 300px;
+	width: 100%;
+	margin-top: 14%;
+	justify-content: center;
+	align-items: center;
+}
+.cup img 
+{
+	height: 100%;
+	width: 50%;
+	object-fit: cover;
+	float: right;
+	border-radius: 3px;
+	position: relative;
+}
+.cup p 
+{
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+    color: #DC7633;
+	font-weight: bold;
+	margin-left: 3%;
+	font-style: italic;
+	margin-top: 4%;
+	position: absolute;
+}
+.cup i 
+{
+	font-size: 18px;
+	color: #E59866;
+	text-align: center;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+.cup b 
+{
+	font-family: 'Poppins', sans-serif;
+	color: #E59866;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.cupboard,
+.double,
+.triple
+{
+	/*border: 1px solid black;*/
+	height: 700px;
+	width: 80%;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cupboard
+{
+	margin-top: 8%;
+}
+.cupboard .loc,
+.double .lod,
+.triple .lot
+{
+    height: 80px;
+    width: 100%;
+}
+.cupboard .loc h1,
+.double .lod h1,
+.triple .lot h1
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #D35400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.cupboard .loc h1:after,
+.double .lod h1:after,
+.triple .lot h1:after
+{
+    content: '';
+    position: absolute;
+    /*right: 55%;*/
+    bottom: -8;
+    transform: translate(-350%);
+    height: 1px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: #F0B27A;
+}
+.cupboard .cupboard1,
+.double .double1,
+.triple .triple1 
+{
+	/*border: 1px solid black;*/
+	height: 600px;
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cupboard .cupboard1 .first,
+.cupboard .cupboard1 .second,
+.double .double1 .first,
+.double .double1 .second,
+.triple .triple1 .first,
+.triple .triple1 .second
+{
+	height: 600px;
+	width: 50%;
+	/*border: 1px solid black;*/
+	justify-content: center;
+	align-items: center;
+}
+.cupboard .cupboard1 .first .img,
+.cupboard .cupboard1 .second .img1,
+.double .double1 .first .img,
+.double .double1 .second .img1,
+.triple .triple1 .first .img,
+.triple .triple1 .second .img1
+{
+	height: 300px;
+	width: 60%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.cupboard .cupboard1 .first .img img,
+.cupboard .cupboard1 .second .img1 img,
+.double .double1 .first .img img,
+.double .double1 .second .img1 img,
+.triple .triple1 .first .img img,
+.triple .triple1 .second .img1 img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.cupboard .cupboard1 .first .text1,
+.cupboard .cupboard1 .second .text2,
+.double .double1 .first .text1, 
+.double .double1 .second .text2,
+.triple .triple1 .first .text1,
+.triple .triple1 .second .text2
+{
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+.cupboard .cupboard1 .first .details,
+.cupboard .cupboard1 .second .detailsec,
+.double .double1 .first .details,
+.double .double1 .second .detailsec,
+.triple .triple1 .first .details,
+.triple .triple1 .second .detailsec
+{
+	height: 200px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	/*border:  1px solid black;*/
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+.cupboard .cupboard1 .first .details .details1,
+.cupboard .cupboard1 .first .details .details2,
+.cupboard .cupboard1 .second .detailsec .detailsec1,
+.cupboard .cupboard1 .second .detailsec .detailsec2,
+.double .double1 .first .details .details1,
+.double .double1 .first .details .details2,
+.double .double1 .second .detailsec .detailsec1,
+.double .double1 .second .detailsec .detailsec2,
+.triple .triple1 .first .details .details1,
+.triple .triple1 .first .details .details2,
+.triple .triple1 .second .detailsec .detailsec1,
+.triple .triple1 .second .detailsec .detailsec2
+{
+	height: 100%;
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/*border: 1px solid black;*/
+	display: flex;
+}
+.cupboard .cupboard1 .first .details .details1 p,
+.cupboard .cupboard1 .first .details .details2 p,
+.cupboard .cupboard1 .second .detailsec .detailsec1 p,
+.cupboard .cupboard1 .second .detailsec .detailsec2 p,
+.double .double1 .first .details .details1 p,
+.double .double1 .first .details .details2 p,
+.double .double1 .second .detailsec .detailsec1 p,
+.double .double1 .second .detailsec .detailsec2 p, 
+.triple .triple1 .first .details .details1 p,
+.triple .triple1 .first .details .details2 p,
+.triple .triple1 .second .detailsec .detailsec1 p,
+.triple .triple1 .second .detailsec .detailsec2 p 
+{
+	text-align: center;
+}
+
+

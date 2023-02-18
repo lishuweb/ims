@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather:ital@0;1&family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Rubik:ital,wght@1,600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.top 
+{
+	height: 80px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	/*background-color: #F9EBEA;*/
+	margin-top: 10%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.top h1 
+{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;	
+    /*border-right: 3px solid black;*/
+}
+.top .bor 
+{
+    border-right: 3px solid #DC7633;
+    height: 40px;
+    width: 10px;
+}
+.pro 
+{
+	height: 300px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	/*border: 1px solid black;*/
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+.container_ 
+{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-left: 40px;
+    display: flex;
+}
+.image 
+{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle 
+{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container_:hover .image 
+{
+  opacity: 0.3;
+}
+.container_:hover .middle 
+{
+  opacity: 1;
+}
+.text 
+{
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 16px 32px;
+}
+
+.single,
+.double,
+.king,
+.queen
+{
+    border: 1px solid black;
+    height: 700px;
+    width: 100%;
+    margin-top: 3%;
+}
+.single .los,
+.double .lod,
+.king .lok,
+.queen .loq
+{
+    height: 80px;
+    width: 100%;
+    border: 1px solid black;
+    /*margin-top: 20px;*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.single .los h1,
+.double .lod h1,
+.king .lok h1,
+.queen .loq h1
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #D35400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.single .los h1:after,
+.double .lod h1:after,
+.king .lok h1:after,
+.queen .loq h1:after
+{
+    /*content: '';
+    position: absolute;
+    bottom: -8;
+    transform: translate(-200%);
+    height: 1px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: #F0B27A;*/
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 20%;
+    background: #DC7633;;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.single .single1,
+.double .double1,
+.king .king1,
+.queen .queen1 
+{
+    border: 1px solid red;
+    height: 600px;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single .single1 .first,
+.single .single1 .second,
+.double .double1 .first,
+.double .double1 .second,
+.king .king1 .first,
+.king .king1 .second,
+.queen .queen1 .first,
+.queen .queen1 .second 
+{
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.single .single1 .first
+{
+    float: left;
+}
+.single .single1 .second
+{
+    float: right;
+}
+.single .single1 .first .image,
+.single .single1 .second .image,
+.double .double1 .first .image,
+.double .double1 .second .image,
+.king .king1 .first .image,
+.king .king1 .second .image,
+.queen .queen1 .first .image,
+.queen .queen1 .second .image
+{
+    height: 300px;
+    width: 60%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+.single .single1 .first .image img,
+.single .single1 .second .image img,
+.double .double1 .first .image img,
+.double .double1 .second .image img,
+.king .king1 .first .image img,
+.king .king1 .second .image img,
+.queen .queen1 .first .image img,
+.queen .queen1 .second .image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.single .single1 .first .text1,
+.single .single1 .second .text2,
+.double .double1 .first .text1, 
+.double .double1 .second .text2,
+.king .king1 .first .text1,
+.king .king1 .second .text2,
+.queen .queen1 .first .text1,
+.queen .queen1 .second .text2
+{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #D35400;
+    background-color: red;
+}
+.single .single1 .first .details,
+.single .single1 .second .detailsec,
+.double .double1 .first .details,
+.double .double1 .second .detailsec,
+.king .king1 .first .details,
+.king .king1 .second .detailsec,
+.queen .queen1 .first .details,
+.queen .queen1 .second .detailsec
+{
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /*border:  1px solid black;*/
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.single .single1 .first .details .details1,
+.single .single1 .first .details .details2,
+.single .single1 .second .detailsec .detailsec1,
+.single .single1 .second .detailsec .detailsec2,
+.double .double1 .first .details .details1,
+.double .double1 .first .details .details2,
+.double .double1 .second .detailsec .detailsec1,
+.double .double1 .second .detailsec .detailsec2,
+.king .king1 .first .details .details1,
+.king .king1 .first .details .details2,
+.king .king1 .second .detailsec .detailsec1,
+.king .king1 .second .detailsec .detailsec2,
+.queen .queen1 .first .details .details1,
+.queen .queen1 .first .details .details2,
+.queen .queen1 .second .detailsec .detailsec1,
+.queen .queen1 .second .detailsec .detailsec2
+{
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.single .single1 .first .details .details1 p,
+.single .single1 .first .details .details2 p,
+.single .single1 .second .detailsec .detailsec1 p,
+.single .single1 .second .detailsec .detailsec2 p,
+.double .double1 .first .details .details1 p,
+.double .double1 .first .details .details2 p,
+.double .double1 .second .detailsec .detailsec1 p,
+.double .double1 .second .detailsec .detailsec2 p,
+.king .king1 .first .details .details1 p,
+.king .king1 .first .details .details2 p,
+.king .king1 .second .detailsec .detailsec1 p,
+.king .king1 .second .detailsec .detailsec2 p,
+.queen .queen1 .first .details .details1 p,
+.queen .queen1 .first .details .details2 p,
+.queen .queen1 .second .detailsec .detailsec1 p,
+.queen .queen1 .second .detailsec .detailsec2 p
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.bed3,
+.bed4
+{
+    margin-top: 5%;
+    /*border: 1px solid black;/*/
+    height: 500px;
+    width: 100%;
+    display: block;
+}
+.bed3 h1,
+.bed4 h1
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #D35400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.bed3 h1:after,
+.bed4 h1:after
+{
+    content: '';
+    position: absolute;
+    /*right: 55%;*/
+    bottom: -8;
+    transform: translate(-250%);
+    height: 1px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: #F0B27A;
+}
+.bed3 .king,
+.bed4 .queen
+{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    /*background-color: blue;*/
+    margin-top: 5%;
+}
+.bed3 .king img,
+.bed4 .queen img 
+{
+    border-radius: 3px;
+    height: 88%;
+    width: 80%;
+    /*float: left;*/
+    /*box-shadow: 3px 3px #F0B27A; */
+    margin-left: 20px;  
+}
+.bed3 .king p,
+.bed4 .queen p 
+{
+    /*text-align: center;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    letter-spacing: 2px;
+    position: relative;
+    margin-left: 10px;
+    margin-left: 30px;
+} 

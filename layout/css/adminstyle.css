@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather:ital@0;1&family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Rubik:ital,wght@1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container 
+{
+    width: 100%;
+    display: block;
+}
+.container .side-bar 
+{
+    display: block;
+    width: 20%;
+    height: 100vh;
+    /*border: 1px solid #D0ECE7;*/
+    float: left;
+    overflow: hidden;
+    position: fixed;
+}
+.side-bar .top 
+{
+    width: 50%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.side-bar .top img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.side-bar ul  
+{
+    margin-top: 60px;
+    text-align: justify;
+    margin-left: 30%;
+}
+.sidenav a, .dropdown-btn 
+{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  margin-top: 5%;
+}
+
+.dropdown-btn  i 
+{
+    margin-right: 40px;
+}
+.sidenav a:hover 
+{
+  color: #117A65;
+  transition: .3s;
+  font-size: 21px;
+}
+.dropdown-btn:hover,
+.dropdown-container a i:hover 
+{
+    color: #117A65;
+    transition: .3s;
+    font-size: 19px;
+}
+.main 
+{
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.active 
+{
+  background-color: #16A085;
+  color: white;
+}
+.dropdown-container 
+{
+  display: none;
+  /*background-color: #262626;*/
+  padding-left: 8px;
+  color: #000;
+  font-size: 18px;
+}
+.dropdown-container a 
+{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.dropdown-container a i 
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.fa-caret-down 
+{
+  margin-left: 20px;
+}
+@media screen and (max-height: 450px) 
+{
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container .nav 
+{
+    height: 60px;
+    width: 100%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    /*display: flex;*/
+    /*border: 1px solid black;*/
+}
+.nav .tp 
+{
+    float: right;
+    display: flex;
+    margin-right: 10%;
+    text-decoration: none;
+}
+.nav .tp .pd,
+.nav .tp .pd1
+{
+    line-height: 60px;
+    margin: 0 80px 60px 0;
+}
+.nav .tp .pd a,
+.nav .tp .pd1 a  
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+.nav .tp .pd1 a i 
+{
+    color: #138D75;
+}
+.nav .tp .pd a:hover 
+{
+    color: #117A65;
+}
+.nav .tp .pd1 a i:hover 
+{
+    color: #D35400;
+}
+.container .info 
+{
+    display: flex;
+    height: 300px;
+    width: 80%;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    background-color: #F8F9F9;
+    float: right;
+}
+.info .box1,
+.info .box2,
+.info .box3
+{
+    height: 50%;
+    width: 30%;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info .box1 .icon  
+{
+    background-color: #16A085;
+}
+.info .box2 .icon
+{
+    background-color: #BB8FCE;
+}
+.info .box3 .icon
+{
+    background-color: #DC7633;
+}
+.info .box1 .icon,
+.info .box2 .icon,
+.info .box3 .icon
+{
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.info .box1 .icon i,
+.info .box2 .icon i,
+.info .box3 .icon i
+{
+    color: #fff;
+    font-size: 38px;
+}
+.info .box1 .details,
+.info .box2 .details,
+.info .box3 .details 
+{
+    background-color: #FDFEFE;
+    height: 100%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.info .box1 .details h4,
+.info .box2 .details h4,
+.info .box3 .details h4
+{
+    text-align: center;
+    font-weight: bold;
+}
+.container .info2
+{
+    height: 520px;
+    width: 80%;
+    float: right;
+    margin-top: 60px;
+    display: flex;
+}
+.container .info2 .high,
+.container .info2 .latest,
+.container .info2 .recent
+{
+    height: 100%;
+    width: 40%;
+    /*border: 1px solid black;*/
+}
+.container .info2 .latest,
+.container .info2 .recent
+{
+    margin-left: 38px;
+}
+.container .info2 .high .front,
+.container .info2 .latest .front,
+.container .info2 .recent .front 
+{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ABEBC6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front p 
+{
+    font-size: 20px;
+    font-weight: bolder;
+    /*text-align: center;*/
+}
+.high .tbl,
+.latest .tbl,
+.recent .tbl 
+{
+    height: 500px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tbl table, tr, th, td
+{
+    border: 1px solid #fff;
+    text-align: center;
+    border-collapse: collapse;
+}
+.tbl table
+{
+    width: 100%;
+}
+th 
+{
+    /*width: 60%;*/
+    height: 50px;
+    background-color: #EBDEF0;
+    /*border: none;*/
+}
+td 
+{
+    height: 40px;
+    background-color: #ECF0F1;
+    margin-top: 50px;
+}
+tr 
+{
+    margin-top: 30px;
+}

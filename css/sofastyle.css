@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@200&display=swap');
+@import "./fontawesome/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;1,300&family=Josefin+Sans:wght@500&family=Kdam+Thmor+Pro&family=Koulen&family=Merriweather:ital@0;1&family=Noto+Serif:wght@700&family=Poppins:wght@200&family=Rubik:ital,wght@1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.nav_bar  
+{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /*margin-top: 10px;*/
+    text-align: center;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+.nav_bar .logo  
+{
+    height: 100%;
+    width: 200px;
+    /*border: 1px solid black;*/
+}
+.nav_bar .logo img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav_bar .navlist
+{
+    display: flex;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 8%;
+}
+.nav_bar .navlist .navlistitem 
+{
+    list-style: none;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    line-height: 80px;
+    color: black;
+    margin: 18px;
+}
+.nav_bar a   
+{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.nav_bar .navlist .navlistitem:after
+{
+    content: "";
+    position: absolute;
+    background-color: #BC8F8F;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.nav_bar .navlist .navlistitem:hover:after
+{
+    width: 100%;
+}
+.nav_bar .but a 
+{
+    background-color: #BC8F8F;
+    color: #fff;
+    font-size: 18px;
+}
+.nav_bar .but a:hover 
+{
+    background-color: #CD6155;
+    transition: .3s;
+}
+.top 
+{
+	margin-top: 12%;
+	/*border: 1px solid black;*/
+	height: 300px;
+	width: 100%;
+	background-color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+.top img 
+{
+	height: 100%;
+	width: 50%;
+	object-fit: cover;
+	float: right;
+	position: relative;
+	margin-right: 5%;
+}
+.top h6 
+{
+	position: absolute;
+	font-size: 28px;
+	font-family: 'Poppins', sans-serif;
+    color: #DC7633;
+    margin-left: 10%;
+    margin-top: 5%;
+    word-spacing: all;
+    font-weight: bolder;
+}
+.top p
+{
+	position: absolute;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+    color: #DC7633;
+    margin-left: 10%;
+    margin-top: 9%;
+    word-spacing: all;
+    font-weight: 700;
+}
+.top p a 
+{
+	position: absolute;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+    color: #16A085;
+   	margin-left: 10px;
+    /*margin-top: 8%;*/*/
+    word-spacing: all;
+    font-weight: 700;
+}
+.top p a:hover 
+{
+	font-size: 20px;
+	transition: .3s;
+}
+
+.top2 
+{
+    display: block;
+    /*border: 1px solid black;*/
+    height: 400px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.top2 .los
+{
+    height: 80px;
+    width: 100%;
+    /*border: 1px solid black;*/
+    margin-top: 20px;
+}
+.top2 .los h1 
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #D35400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.top2 .los h1:after
+{
+    content: '';
+    position: absolute;
+    /*right: 55%;*/
+    bottom: -8;
+    transform: translate(-250%);
+    height: 1px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: #F0B27A;
+}
+
+.top2 .top3 
+{
+    display: flex;
+    /*border: 1px solid black;*/
+    height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.top2 .top3 .imag1,
+.top2 .top3 .imag2,
+.top2 .top3 .imag3,
+.top2 .top3 .imag4
+{
+    height: 200px;
+    width: 200px;
+    /*border: 1px solid black;*/
+    margin-left: 50px;
+}
+.top2 .top3 .imag1 img,
+.top2 .top3 .imag2 img,
+.top2 .top3 .imag3 img,
+.top2 .top3 .imag4 img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.top2 .top3 .imag1 p,
+.top2 .top3 .imag2 p,
+.top2 .top3 .imag3 p,
+.top2 .top3 .imag4 p 
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.arm,
+.loveset,
+.lsofa 
+{
+	display: block;
+	height: 650px;
+	width: 100%;
+	/*border: 1px solid black;*/
+	margin-top: 3%;
+	justify-content: center;
+	align-items: center;
+}
+.arm .til,
+.loveset .til1,
+.lsofa .til2 
+{
+	/*border: 1px solid black;*/
+	height: 80px;
+	width: 100%;
+}
+.arm .til h1,
+.loveset .til1 h1,
+.lsofa .til2 h1
+{
+	font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #D35400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.arm .til h1:after,
+.loveset .til1 h1:after,
+.lsofa .til2 h1:after
+{
+    content: '';
+    position: absolute;
+    /*right: 55%;*/
+    bottom: -8;
+    transform: translate(-180%);
+    height: 1px;
+    width: 60px;
+    border-radius: 2px;
+    background-color: #F0B27A;
+}
+.arm .items,
+.loveset .types,
+.lsofa .diff
+{
+    /*border: 1px solid black;*/
+	height: 550px;
+	width: 80%;
+	display: flex;
+	margin-top: 30px;
+	justify-content: center;
+	/*align-items: center;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.arm .items .arm1,
+.arm .items .arm2,
+.loveset .types .lovese1,
+.loveset .types .lovese2,
+.lsofa .diff .lsofa1,
+.lsofa .diff .lsofa2
+{
+	display: block;
+	height: 300px;
+	width: 40%;
+	/*border: 1px solid black;*/
+	margin-left: 80px;
+}
+.arm .items .arm1 .image,
+.arm .items .arm2 .image,
+.loveset .types .lovese1 .image,
+.loveset .types .lovese2 .image,
+.lsofa .diff .lsofa1 .image,
+.lsofa .diff .lsofa2 .image
+{
+    height: 300px;
+    width: 100%;
+}
+.arm .items .arm1 .image img,
+.arm .items .arm2 .image img,
+.loveset .types .lovese1 .image img,
+.loveset .types .lovese2 .image img,
+.lsofa .diff .lsofa1 .image img,
+.lsofa .diff .lsofa2 .image img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+.arm .items .arm1 .text1,
+.arm .items .arm2 .text1,
+.loveset .types .lovese1 .text1,
+.loveset .types .lovese2 .text1,
+.lsofa .diff .lsofa1 .text1,
+.lsofa .diff .lsofa2 .text1
+{
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+}
+.arm .items .arm1 .text1 h5,
+.arm .items .arm2 .text1 h5,
+.loveset .types .lovese1 .text1 h5,
+.loveset .types .lovese2 .text1 h5,
+.lsofa .diff .lsofa1 .text1 h5,
+.lsofa .diff .lsofa2 .text1 h5
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+    margin-top: 20px;
+}
+.arm .items .arm1 .detail,
+.arm .items .arm2 .detail,
+.loveset .types .lovese1 .detail,
+.loveset .types .lovese2 .detail,
+.lsofa .diff .lsofa1 .detail,
+.lsofa .diff .lsofa2 .detail
+{
+    height: 150px;
+    width: 100%;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.arm .items .arm1 .detail .detail1 .detail2, 
+.arm .items .arm2 .detail .detail1 .detail2,
+.loveset .types .lovese1 .detail .detail1 .detail2,
+.loveset .types .lovese2 .detail .detail1 .detail2,
+.lsofa .diff .lsofa1 .detail .detail1 .detail2,
+.lsofa .diff .lsofa2 .detail .detail1 .detail2
+{
+    height: 100%;
+    width: 50%;
+    /*border: 1px solid black;*/
+}
+.arm .items .arm1 .detail .detail1 .detail2 p,
+.arm .items .arm2 .detail .detail1 .detail2 p,
+.loveset .types .lovese1 .detail .detail1 .detail2 p,
+.loveset .types .lovese2 .detail .detail1 .detail2 p,
+.lsofa .diff .lsofa1 .detail .detail1 .detail2 p,
+.lsofa .diff .lsofa2 .detail .detail1 .detail2 p
+{
+    font-size: 15px;
+    /*font-weight: bold;*/
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}

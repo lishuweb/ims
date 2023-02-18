@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+
+.second 
+{
+    /*border: 1px solid black;*/
+    margin-top: 8%;
+    height: 280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.second img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    position: absolute;
+}
+.second p 
+{
+    position: absolute;
+    font-size: 25px;
+    background-color: #D1F2EB;
+    padding: 13px 18px;
+    color: #145A32;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text  
+{
+    /*border: 1px solid black;*/
+    margin-top: 5%;
+    height: 250px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.text h1 
+{
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+}
+.text h1:after 
+{
+    content: '';
+    position: absolute;
+    /*right: 55%;*/
+    bottom: 0;
+    transform: translate(-46%);
+    height: 3px;
+    width: 30px;
+    border-radius: 2px;
+    background-color: black;
+}
+.text p 
+{
+    color: black;
+    font-size: 18px;
+}
+.text2
+{
+    /*border: 1px solid black;*/
+    margin-top: 30px;
+    height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    /*background-color: green;*/
+}
+.text2 h1 
+{
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+}
+
+.text2 h1:after 
+{
+    content: '';
+    position: absolute;
+    /*right: 55%;*/
+    bottom: 0;
+    transform: translate(-46%);
+    height: 3px;
+    width: 30px;
+    border-radius: 2px;
+    background-color: black;
+}
+.text2 .ser 
+{
+    display: flex;
+    /*border: 1px solid black;*/
+    /*background-color: red;*/
+    height: 420px;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+.text2 .ser .box1 
+{
+    display: block;
+    border: 1px solid black;
+    height: 300px;
+    width: 30%;
+    /*float: left;*/
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #E9967A;
+    border-radius: 3px;
+}
+.text2 .ser .box1 .one
+{
+    border: 1px solid black;
+    /*display: inline-block;*/
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /*margin-top: 20px;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text2 .ser .box1 .one h6 
+{
+    /*height: 60px;
+    width: 60px;*/
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text2 .ser .box1 h3 
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: green;
+}
+.text2 .ser .box1 p 
+{
+    text-align: center;
+    /*margin-top: 10px;*/
+    color: black;
+}
+.text2 .ser .box2
+{
+    display: block;
+    border: 1px solid black;
+    height: 300px;
+    width: 30%;
+    /*float: left;*/
+    margin-left: 20px;
+    border-bottom: 10px solid #E9967A;
+    border-radius: 3px;
+}
+.text2 .ser .box2 .one
+{
+    /*border: 1px solid black;*/
+    /*display: inline-block;*/
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /*margin-top: 20px;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text2 .ser .box2 .one h6 
+{
+    /*height: 60px;
+    width: 60px;*/
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text2 .ser .box2 h3 
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: green;
+}
+.text2 .ser .box2 p 
+{
+    text-align: center;
+    /*margin-top: 10px;*/
+    color: black;
+}
+.text2 .ser .box3
+{
+    display: block;
+    border: 1px solid black;
+    height: 300px;
+    width: 30%;
+    /*float: left;*/
+    margin-left: 20px;
+    border-bottom: 10px solid #E9967A;
+    border-radius: 3px;
+}
+.text2 .ser .box3 .one
+{
+    /*border: 1px solid black;*/
+    /*display: inline-block;*/
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /*margin-top: 20px;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text2 .ser .box3 .one h6 
+{
+    /*height: 60px;
+    width: 60px;*/
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text2 .ser .box3 h3 
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: green;
+}
+.text2 .ser .box3 p 
+{
+    text-align: center;
+    /*margin-top: 10px;*/
+    color: black;
+}
+.footer 
+{
+  height: 300px;
+  width: 100%;
+  /*border: 1px solid black;*/
+  display: flex;
+  margin-top: 5%;
+}
+.footer .details1,
+.footer .details2,
+.footer .details3
+{
+  height: 300px;
+  width: 50%;
+  /*border: 1px solid black;*/
+}
+.footer .details1 .ig 
+{
+    height: 100px;
+    width: 180px;
+    /*border: 1px solid black;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 20px;*/
+}
+.footer .details1 .ig img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.footer .details1 .define 
+{
+    height: 200px;
+    width: 100%;
+    /*background-color: blue;*/
+    margin-top: 20px;
+}
+.footer .details1 .define p 
+{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer .details2 .txt1,
+.footer .details3 .txt2
+{
+    height: 80px;
+    width: 100%;
+    /*background-color: green;*/
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 10px;*/
+}
+.footer .details2 .txt1 p,
+.footer .details3 .txt2 p
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    /*margin-top: 40px;*/
+    margin-top: 20px;
+    position: relative; 
+}
+.footer .details2 .txt1 p:after,
+.footer .details3 .txt2 p:after
+{
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 5%;
+    background: #000;;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.footer .details2 .define1
+{
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-top: 10px;
+}
+.footer .details2 .define1 a 
+{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.footer .details2 .define1 a:hover
+{ 
+    color: #DC7633;
+    transition: .3s;
+}
+.footer .details2 .define1 a:hover:after 
+{
+    /*color: #DC7633;
+    font-size: 18px;
+    transition: .3s;*/
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 30%;
+    background: #DC7633;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.footer .details3 .define2
+{
+    height: 100px;
+    width: 100%;
+    /*background-color: green;*/
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.footer .details3 .define2 p 
+{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    /*margin-top: 20px;*/
+    line-height: 30px;
+}
+.footer .details3 .define2 p i 
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer .details3 .sm 
+{
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    /*background-color: red;*/
+}
+.footer .details3 .sm a 
+{
+    text-decoration: none;
+    color: #000;
+}
+.footer .details3 .sm i 
+{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+.footer .details3 .sm i:hover 
+{
+    font-size: 22px;
+    transition: .3s;
+    cursor: pointer;
+    color: #DC7633;
+}
+.right 
+{
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+.right p
+{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
